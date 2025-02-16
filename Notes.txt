@@ -4,6 +4,10 @@ sayiIse = 13
 print "kurum "+ str(sayiIse)
 sayiları str ile
 metinleri int ile çevirebiliriz.
+ondalıklı sayilari round ile yuvarlayabilirsin:
+mesafe=round(mesafekm,2)
+bu virgülden sonra 2.basamağı yuvarlar gerisini yazdırmaz.
+
 
 Klavyeden input alırken:
 ornek = input('ornek no: ')
@@ -115,3 +119,24 @@ Identity ve Membership Operatörleri
     in -> Listede varlık kontrolü yapar. Örnek: x in y
     not in -> Listede varlık kontrolü yapar. Örnek: x not in y
 __________________________________________________________
+
+if/elif/else:
+
+if(true):
+ print("true")
+else:
+ print("false")
+
+or
+
+if (1 != 1):
+print("esit degil")
+elif(1 < 1)
+print("buyuk degil")
+else: 
+print("cok da onemli degil")
+
+#Soru:
+#1- Bir aracın (yakıt tipine göre) klavyeden belirtilen bir mesafede ne kadar yakıt tükkettiğini hesaplayan uygulamayı yaz.
+
+cevap: look örnekler.py
