@@ -1,0 +1,117 @@
+değişken tanımlanırken:
+kurum = "btk"
+sayiIse = 13
+print "kurum "+ str(sayiIse)
+sayiları str ile
+metinleri int ile çevirebiliriz.
+
+Klavyeden input alırken:
+ornek = input('ornek no: ')
+Fstring:
+metin yazarken değişkenden veri çekmek için kullanılabilir:
+müsteri=[ahmet,vel,ali]
+siparis=[100,1000,200]
+sonuc = f"{müsteri[1]}isimli müşterinin siparişi {siparis[1]} tl'dir"
+print (sonuc)
+#vel isimli müşterinin siparişi 1000 tl'dir
+
+
+Listeler:
+köşeli parantez içinde tanımlanır.
+Kurum = ['BTK','AKADEMİ']
+
+KURUM[0] -> BTK
+KURUM[1] -> AKADEMİ
+
+sayilar = [1,2,3,4,5]
+#print(sayilar) -> hepsi
+print(sayilar[3]) -> 4
+print(sayilar[0:3]) -> 1,2,3 #bitiş indexi dahil değildir.
+
+listeye eleman ekleme 
+prgram = ["a","b"]
+
+sonuc = prgram + ["c"]
+print(sonuc)
+#a,b,c
+_______________________________________________________
+sorular:
+1-toyota, bmw, renault, mercedes elemanlı bir liste oluştur.
+2- liste kaç elemanlı?
+3- listenin ilk ve son elemanını çek
+4- renault markasını togg ile güncelle
+5-listenin ilk 2 elemanını al
+6-listenin sonuna ford ve citroen ekle 
+7-listenin son elemanını sil
+""""""
+markalar = ["toyota", "bmw", "renault", "mercedes"]
+2print(len(markalar))
+1print(markalar)
+3print(markalar[0], markalar[-1])
+markalar[2] = "TOGG"
+4print(markalar)
+5print(markalar[:2])
+markalar= markalar + ["ford", "citroen"]
+6print(markalar)
+markalar.pop()
+7print(markalar)
+""""""
+4
+['toyota', 'bmw', 'renault', 'mercedes']
+toyota mercedes
+['toyota', 'bmw', 'TOGG', 'mercedes']
+['toyota', 'bmw']
+['toyota', 'bmw', 'TOGG', 'mercedes', 'ford', 'citroen']
+['toyota', 'bmw', 'TOGG', 'mercedes', 'ford']
+"""""
+
+başka yöntem olarak:
+silmek için:
+del markalar [-1] ->kullanılabilir
+_______________________________________________________
+Liste Metotları
+Metot		Açıklama
+append()	Listenin sonuna eleman ekler.
+clear()		Listedeki tüm elemanları siler.
+count()		Bir değerin listedeki tekrar sayısını döndürür.
+index()		Aranan değerin listedeki ilk index numarasını döndürür.
+insert()	Belirtilen indeks konumuna eleman ekler.
+pop()		Belirtilen indeksteki elemanı siler. Varsayılan listenin son elemanıdır.
+remove()	Belirtilen değeri listeden siler.
+reverse()	Liste elemanlarını tersten sıralar.
+sort()		Listedeki elemanları sayısal ya da alfabetik olarak sıralar.
+___________________________________________________________
+not:tuple listeler eklenemez çıkarılmaz sabit bir listedir.
+__________________________________________________________
+dictionary listeler key-value düzenindedir:
+plakalar = {
+	'kocaeli': 41,
+	'istanbuş': 34,
+} 
+print(plakalar['istanbuş']) -> 34
+
+yeni eleman eklemek ya da var olanı değiştirmek için:
+plakalar['izmir'] = 36
+
+__________________________________________________________
+
+Dictionary Metotları
+
+    clear() -> Listedeki tüm elemanları siler.
+    copy() -> Listenin kopyasını çıkartır.
+    get() -> Belirtilen key ile value değeri döndürülür.
+    items() -> Key-value değerlerini liste şeklinde döndürür.
+    keys() -> Listedeki key bilgilerini liste şeklinde döndürür.
+    values() -> Listedeki value bilgilerini liste şeklinde döndürür.
+    pop() -> Belirtilen indeks ile elemanı siler.
+    popitem() -> Eklenen son key-value değerini siler.
+    update() -> Güncelleme için kullanılır.eklemek için de kullanılır.
+__________________________________________________________
+
+Identity ve Membership Operatörleri
+
+    is -> Nesne benzerliğini kontrol eder. Örnek: x is y
+    is not -> Nesne benzerliğini kontrol eder. Örnek: x is not y
+    in -> Listede varlık kontrolü yapar. Örnek: x in y
+    not in -> Listede varlık kontrolü yapar. Örnek: x not in y
+__________________________________________________________
