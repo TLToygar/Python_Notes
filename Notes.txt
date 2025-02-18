@@ -139,4 +139,4 @@ print("cok da onemli degil")
 #Soru:
 #1- Bir aracın (yakıt tipine göre) klavyeden belirtilen bir mesafede ne kadar yakıt tükkettiğini hesaplayan uygulamayı yaz.
 
-cevap: look örnekler.py
+cevap: look -> örnekler.py
